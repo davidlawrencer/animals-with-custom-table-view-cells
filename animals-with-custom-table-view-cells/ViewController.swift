@@ -28,20 +28,25 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath) as? AnimalTableViewCell {
+        
             
             switch indexPath.section {
             case 0:
+                if let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath) as? AnimalTableViewCell {
                 cell.nameLabel?.text = landAnimals[indexPath.row].type
                 cell.animalImageView.image = landAnimals[indexPath.row].getImage()
+               return cell
+                }
             case 1:
-                cell.nameLabel?.text = seaAnimals[indexPath.row].type
-                cell.animalImageView.image = seaAnimals[indexPath.row].getImage()
+                if let cell = animalTableView.dequeueReusableCell(withIdentifier: "seaAnimalz", for: indexPath) as? SeaAnimalTableViewCell {
+                cell.seaAnimalLabel?.text = seaAnimals[indexPath.row].type
+                cell.seaAnimalImage.image = seaAnimals[indexPath.row].getImage()
+                cell.edibleAnimalLabel.text = seaAnimals[indexPath.row].canIEatIt()
+                return cell
+                }
             default:
                 break
             }
-            return cell
-        }
 
         return UITableViewCell()
     }
@@ -62,7 +67,14 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+        switch indexPath.section {
+        case 0:
+            return 125
+        case 1:
+            return 150
+        default:
+            return 0
+        }
     }
     
     override func viewDidLoad() {
