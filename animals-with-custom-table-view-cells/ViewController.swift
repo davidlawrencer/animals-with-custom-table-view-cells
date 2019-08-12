@@ -65,6 +65,10 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         print("hey you selected me in the table view")
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 125
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         animalTableView.dataSource = self
