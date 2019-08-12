@@ -11,19 +11,17 @@ import UIKit
 class SeaAnimalTableViewCell: UITableViewCell {
 
     @IBOutlet weak var seaAnimalImage: UIImageView!
-    
     @IBOutlet weak var seaAnimalLabel: UILabel!
-    
     @IBOutlet weak var edibleAnimalLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    //gets called every time isSelected is set.
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

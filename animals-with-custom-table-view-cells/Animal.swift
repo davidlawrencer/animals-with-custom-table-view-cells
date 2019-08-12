@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//MARK: -- Definition
 struct Animal {
     let type: String
     let isOnLand: Bool
@@ -18,14 +19,17 @@ struct Animal {
     }
 }
 
+//MARK: -- Custom String Convertible
 extension Animal: CustomStringConvertible {
     var description: String {
         return "\(type) is a \(isOnLand ? "land" : "sea") animal"
     }
 }
 
+//MARK: -- Imageable
 extension Animal: Imageable {
     var imageName: String {return type.replacingOccurrences(of: " ", with: "")}
+    
     func getImage() -> UIImage {
         return UIImage(named: imageName)!
     }    

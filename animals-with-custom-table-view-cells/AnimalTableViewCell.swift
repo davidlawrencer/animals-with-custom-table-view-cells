@@ -12,11 +12,13 @@ class AnimalTableViewCell: UITableViewCell {
 
     @IBOutlet weak var animalImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    //gets called every time isSelected is set
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
