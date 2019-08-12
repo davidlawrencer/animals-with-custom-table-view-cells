@@ -12,6 +12,10 @@ import UIKit
 struct Animal {
     let type: String
     let isOnLand: Bool
+    let isEdible:Bool
+    func canIEatIt() -> String {
+        return isEdible ? "\(type) is yum yum" : "\(type) is not yum yum"
+    }
 }
 
 extension Animal: CustomStringConvertible {

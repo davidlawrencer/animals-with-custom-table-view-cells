@@ -9,7 +9,7 @@
 import Foundation
 
 struct AnimalData {
-    private static let getAnimals  = [Animal(type: "octopus", isOnLand:false ), Animal(type: "elephant", isOnLand:true ), Animal(type: "lion", isOnLand:true ), Animal(type:"monkey", isOnLand: true), Animal(type:"lobster", isOnLand:false ), Animal(type:"sea horse", isOnLand:false ), Animal(type:"dolphin", isOnLand:false ), Animal(type:"dog", isOnLand:true ),  Animal(type:"shark", isOnLand:false ),  Animal(type:"panther", isOnLand: true)]
+    private static let getAnimals  = [Animal(type: "octopus", isOnLand:false, isEdible: true), Animal(type: "elephant", isOnLand:true, isEdible: false ), Animal(type: "lion", isOnLand:true, isEdible: false ), Animal(type:"monkey", isOnLand: true, isEdible: false), Animal(type:"lobster", isOnLand:false, isEdible: true ), Animal(type:"sea horse", isOnLand:false, isEdible: false ), Animal(type:"dolphin", isOnLand:false, isEdible: false ), Animal(type:"dog", isOnLand:true, isEdible: false ),  Animal(type:"shark", isOnLand:false, isEdible: true ),  Animal(type:"panther", isOnLand: true, isEdible: false)]
     
     static let landAnimal = AnimalData.getAnimals.filter({$0.isOnLand})
     static let  seaAnimal = AnimalData.getAnimals.filter({!$0.isOnLand})
