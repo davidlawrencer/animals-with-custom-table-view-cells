@@ -3,4 +3,5 @@
 # gitignore contributors: update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
-xcuserdata/
+*.xcuserdata/
+*.xcuserstate
