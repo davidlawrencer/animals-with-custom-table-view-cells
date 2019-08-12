@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
+    //MARK: -- Outlets
     @IBOutlet weak var animalTableView: UITableView!
     
+    //MARK: -- Properties
     let landAnimals = AnimalData.landAnimal
     let seaAnimals = AnimalData.seaAnimal
     
+    //MARK: -- Data Source Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -27,9 +30,6 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-            
             switch indexPath.section {
             case 0:
                 if let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath) as? AnimalTableViewCell {
@@ -66,6 +66,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         }
     }
 
+    //MARK: -- Delegate Methods
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
@@ -77,10 +78,13 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         }
     }
     
+    //MARK: -- Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         animalTableView.dataSource = self
         animalTableView.delegate = self
     }
+    
+    //TODO: TD: Make some private methods
 }
 
