@@ -18,6 +18,7 @@
 		540AB74C2301ADE9007B790B /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74B2301ADE9007B790B /* AnimalData.swift */; };
 		540AB74E2301BCFE007B790B /* Imageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74D2301BCFE007B790B /* Imageable.swift */; };
 		540AB7502301BF65007B790B /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74F2301BF65007B790B /* AnimalTableViewCell.swift */; };
+		540AB7522301E3C0007B790B /* SeaAnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB7512301E3C0007B790B /* SeaAnimalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		540AB74B2301ADE9007B790B /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
 		540AB74D2301BCFE007B790B /* Imageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imageable.swift; sourceTree = "<group>"; };
 		540AB74F2301BF65007B790B /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		540AB7512301E3C0007B790B /* SeaAnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaAnimalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				540AB74D2301BCFE007B790B /* Imageable.swift */,
 				540AB74B2301ADE9007B790B /* AnimalData.swift */,
 				540AB71F2301AD4F007B790B /* Main.storyboard */,
+				540AB7512301E3C0007B790B /* SeaAnimalTableViewCell.swift */,
 				540AB74F2301BF65007B790B /* AnimalTableViewCell.swift */,
 				540AB7222301AD50007B790B /* Assets.xcassets */,
 				540AB7242301AD50007B790B /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 				540AB71C2301AD4F007B790B /* AppDelegate.swift in Sources */,
 				540AB74A2301ADA0007B790B /* Animal.swift in Sources */,
 				540AB7502301BF65007B790B /* AnimalTableViewCell.swift in Sources */,
+				540AB7522301E3C0007B790B /* SeaAnimalTableViewCell.swift in Sources */,
 				540AB74C2301ADE9007B790B /* AnimalData.swift in Sources */,
 				540AB74E2301BCFE007B790B /* Imageable.swift in Sources */,
 			);

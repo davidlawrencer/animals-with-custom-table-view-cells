@@ -56,6 +56,49 @@
                                             <outlet property="nameLabel" destination="oJw-l7-fyL" id="vJB-6o-VEu"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="seaAnimalz" rowHeight="150" id="zUL-bF-e77" customClass="SeaAnimalTableViewCell" customModule="animals_with_custom_table_view_cells" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="153" width="240" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zUL-bF-e77" id="cvr-OA-15L">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-za-Eie">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qh9-Pg-FYa">
+                                                    <rect key="frame" x="120" y="22" width="120" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Mod-jh-sA1"/>
+                                                        <constraint firstAttribute="height" constant="80" id="OM2-Ag-5Iq"/>
+                                                        <constraint firstAttribute="width" constant="120" id="Rqe-Qe-BeW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1d-JA-nuG" userLabel="Eat it Label">
+                                                    <rect key="frame" x="192" y="110" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qh9-Pg-FYa" firstAttribute="trailing" secondItem="fdY-za-Eie" secondAttribute="trailing" id="5iO-y1-ACS"/>
+                                                <constraint firstItem="p1d-JA-nuG" firstAttribute="top" secondItem="Qh9-Pg-FYa" secondAttribute="bottom" constant="8" id="98H-px-QSp"/>
+                                                <constraint firstAttribute="trailing" secondItem="fdY-za-Eie" secondAttribute="trailing" id="ZtV-VS-8ME"/>
+                                                <constraint firstItem="p1d-JA-nuG" firstAttribute="trailing" secondItem="fdY-za-Eie" secondAttribute="trailing" constant="-6" id="pmE-j1-NWB"/>
+                                                <constraint firstItem="Qh9-Pg-FYa" firstAttribute="top" secondItem="fdY-za-Eie" secondAttribute="bottom" constant="1" id="qLU-AK-YU2"/>
+                                                <constraint firstItem="fdY-za-Eie" firstAttribute="top" secondItem="cvr-OA-15L" secondAttribute="top" id="rLR-rr-vZM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="edibleAnimalLabel" destination="p1d-JA-nuG" id="zI1-t9-YzJ"/>
+                                            <outlet property="seaAnimalImage" destination="Qh9-Pg-FYa" id="lyq-Fh-pGx"/>
+                                            <outlet property="seaAnimalLabel" destination="fdY-za-Eie" id="w48-DK-ESl"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
