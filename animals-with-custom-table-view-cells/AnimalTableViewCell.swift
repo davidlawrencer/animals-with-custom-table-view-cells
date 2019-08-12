@@ -19,7 +19,5 @@ class AnimalTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        print("i'm a cell and you just selected me")
-        // Configure the view for the selected state
     }
 }

@@ -61,10 +61,6 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         }
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("hey you selected me in the table view")
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 125
     }
