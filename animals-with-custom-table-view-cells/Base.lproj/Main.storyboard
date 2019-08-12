@@ -23,29 +23,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalz" textLabel="MGo-En-eJj" detailTextLabel="zuo-tC-TDH" style="IBUITableViewCellStyleSubtitle" id="MS6-MO-moH">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalz" rowHeight="125" id="MS6-MO-moH" customClass="AnimalTableViewCell" customModule="animals_with_custom_table_view_cells" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MS6-MO-moH" id="lKs-T2-Icz">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MGo-En-eJj">
-                                                    <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJw-l7-fyL">
+                                                    <rect key="frame" x="16" y="0.0" width="173" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zuo-tC-TDH">
-                                                    <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VTZ-IB-q26">
+                                                    <rect key="frame" x="16" y="29" width="120" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="cIC-0j-DTe"/>
+                                                        <constraint firstAttribute="width" constant="120" id="o4J-JX-8Jt"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VTZ-IB-q26" firstAttribute="top" secondItem="oJw-l7-fyL" secondAttribute="bottom" constant="8" id="FlF-Ah-QlY"/>
+                                                <constraint firstItem="VTZ-IB-q26" firstAttribute="leading" secondItem="oJw-l7-fyL" secondAttribute="leading" id="SkD-93-g5D"/>
+                                                <constraint firstItem="oJw-l7-fyL" firstAttribute="top" secondItem="lKs-T2-Icz" secondAttribute="top" id="qTU-vy-w6b"/>
+                                                <constraint firstItem="oJw-l7-fyL" firstAttribute="leading" secondItem="lKs-T2-Icz" secondAttribute="leading" constant="16" id="ywz-2N-pld"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalImageView" destination="VTZ-IB-q26" id="0km-P0-dZa"/>
+                                            <outlet property="nameLabel" destination="oJw-l7-fyL" id="vJB-6o-VEu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

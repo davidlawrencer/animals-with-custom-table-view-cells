@@ -16,6 +16,8 @@
 		540AB73C2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB73B2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift */; };
 		540AB74A2301ADA0007B790B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB7492301ADA0007B790B /* Animal.swift */; };
 		540AB74C2301ADE9007B790B /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74B2301ADE9007B790B /* AnimalData.swift */; };
+		540AB74E2301BCFE007B790B /* Imageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74D2301BCFE007B790B /* Imageable.swift */; };
+		540AB7502301BF65007B790B /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74F2301BF65007B790B /* AnimalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		540AB73D2301AD50007B790B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540AB7492301ADA0007B790B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		540AB74B2301ADE9007B790B /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
+		540AB74D2301BCFE007B790B /* Imageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imageable.swift; sourceTree = "<group>"; };
+		540AB74F2301BF65007B790B /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,10 @@
 				540AB71B2301AD4F007B790B /* AppDelegate.swift */,
 				540AB71D2301AD4F007B790B /* ViewController.swift */,
 				540AB7492301ADA0007B790B /* Animal.swift */,
+				540AB74D2301BCFE007B790B /* Imageable.swift */,
 				540AB74B2301ADE9007B790B /* AnimalData.swift */,
 				540AB71F2301AD4F007B790B /* Main.storyboard */,
+				540AB74F2301BF65007B790B /* AnimalTableViewCell.swift */,
 				540AB7222301AD50007B790B /* Assets.xcassets */,
 				540AB7242301AD50007B790B /* LaunchScreen.storyboard */,
 				540AB7272301AD50007B790B /* Info.plist */,
@@ -265,7 +271,9 @@
 				540AB71E2301AD4F007B790B /* ViewController.swift in Sources */,
 				540AB71C2301AD4F007B790B /* AppDelegate.swift in Sources */,
 				540AB74A2301ADA0007B790B /* Animal.swift in Sources */,
+				540AB7502301BF65007B790B /* AnimalTableViewCell.swift in Sources */,
 				540AB74C2301ADE9007B790B /* AnimalData.swift in Sources */,
+				540AB74E2301BCFE007B790B /* Imageable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

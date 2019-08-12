@@ -27,20 +27,23 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath)
         
-        switch indexPath.section {
-        case 0:
-            cell.textLabel?.text = landAnimals[indexPath.row].type
-            cell.detailTextLabel?.text = landAnimals[indexPath.row].description
-        case 1:
-            cell.textLabel?.text = seaAnimals[indexPath.row].type
-            cell.detailTextLabel?.text = seaAnimals[indexPath.row].description
-        default:
-            break
+        if let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath) as? AnimalTableViewCell {
+            
+            switch indexPath.section {
+            case 0:
+                cell.nameLabel?.text = landAnimals[indexPath.row].type
+                cell.animalImageView.image = landAnimals[indexPath.row].getImage()
+            case 1:
+                cell.nameLabel?.text = seaAnimals[indexPath.row].type
+                cell.animalImageView.image = seaAnimals[indexPath.row].getImage()
+            default:
+                break
+            }
+            return cell
         }
 
-        return cell
+        return UITableViewCell()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,6 +61,10 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         }
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hey you selected me in the table view")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         animalTableView.dataSource = self
