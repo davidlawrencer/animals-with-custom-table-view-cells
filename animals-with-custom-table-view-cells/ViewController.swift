@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController {
     
     //MARK: -- Outlets
     @IBOutlet weak var animalTableView: UITableView!
@@ -17,6 +17,17 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     let landAnimals = AnimalData.landAnimal
     let seaAnimals = AnimalData.seaAnimal
     
+    //MARK: -- Lifecycle Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        animalTableView.dataSource = self
+        animalTableView.delegate = self
+    }
+    
+    //TODO: TD: Make some private methods
+}
+
+extension ViewController: UITableViewDataSource {
     //MARK: -- Data Source Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
@@ -30,24 +41,24 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            switch indexPath.section {
-            case 0:
-                if let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath) as? AnimalTableViewCell {
+        switch indexPath.section {
+        case 0:
+            if let cell = animalTableView.dequeueReusableCell(withIdentifier: "animalz", for: indexPath) as? AnimalTableViewCell {
                 cell.nameLabel?.text = landAnimals[indexPath.row].type
                 cell.animalImageView.image = landAnimals[indexPath.row].getImage()
-               return cell
-                }
-            case 1:
-                if let cell = animalTableView.dequeueReusableCell(withIdentifier: "seaAnimalz", for: indexPath) as? SeaAnimalTableViewCell {
+                return cell
+            }
+        case 1:
+            if let cell = animalTableView.dequeueReusableCell(withIdentifier: "seaAnimalz", for: indexPath) as? SeaAnimalTableViewCell {
                 cell.seaAnimalLabel?.text = seaAnimals[indexPath.row].type
                 cell.seaAnimalImage.image = seaAnimals[indexPath.row].getImage()
                 cell.edibleAnimalLabel.text = seaAnimals[indexPath.row].canIEatIt()
                 return cell
-                }
-            default:
-                break
             }
-
+        default:
+            break
+        }
+        
         return UITableViewCell()
     }
     
@@ -65,7 +76,9 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
             return "It's something"
         }
     }
+}
 
+extension ViewController: UITableViewDelegate {
     //MARK: -- Delegate Methods
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
@@ -77,14 +90,4 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
             return 0
         }
     }
-    
-    //MARK: -- Lifecycle Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        animalTableView.dataSource = self
-        animalTableView.delegate = self
-    }
-    
-    //TODO: TD: Make some private methods
 }
-
