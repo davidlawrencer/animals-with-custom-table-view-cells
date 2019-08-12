@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540AB71C2301AD4F007B790B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB71B2301AD4F007B790B /* AppDelegate.swift */; };
+		540AB71E2301AD4F007B790B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB71D2301AD4F007B790B /* ViewController.swift */; };
+		540AB7212301AD4F007B790B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540AB71F2301AD4F007B790B /* Main.storyboard */; };
+		540AB7232301AD50007B790B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540AB7222301AD50007B790B /* Assets.xcassets */; };
+		540AB7262301AD50007B790B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540AB7242301AD50007B790B /* LaunchScreen.storyboard */; };
+		540AB7312301AD50007B790B /* animals_with_custom_table_view_cellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB7302301AD50007B790B /* animals_with_custom_table_view_cellsTests.swift */; };
+		540AB73C2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB73B2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift */; };
+		540AB74A2301ADA0007B790B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB7492301ADA0007B790B /* Animal.swift */; };
+		540AB74C2301ADE9007B790B /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AB74B2301ADE9007B790B /* AnimalData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540AB72D2301AD50007B790B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540AB7102301AD4F007B790B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540AB7172301AD4F007B790B;
+			remoteInfo = "animals-with-custom-table-view-cells";
+		};
+		540AB7382301AD50007B790B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540AB7102301AD4F007B790B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540AB7172301AD4F007B790B;
+			remoteInfo = "animals-with-custom-table-view-cells";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540AB7182301AD4F007B790B /* animals-with-custom-table-view-cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animals-with-custom-table-view-cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		540AB71B2301AD4F007B790B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		540AB71D2301AD4F007B790B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		540AB7202301AD4F007B790B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		540AB7222301AD50007B790B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		540AB7252301AD50007B790B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		540AB7272301AD50007B790B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540AB72C2301AD50007B790B /* animals-with-custom-table-view-cellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "animals-with-custom-table-view-cellsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		540AB7302301AD50007B790B /* animals_with_custom_table_view_cellsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animals_with_custom_table_view_cellsTests.swift; sourceTree = "<group>"; };
+		540AB7322301AD50007B790B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540AB7372301AD50007B790B /* animals-with-custom-table-view-cellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "animals-with-custom-table-view-cellsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		540AB73B2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animals_with_custom_table_view_cellsUITests.swift; sourceTree = "<group>"; };
+		540AB73D2301AD50007B790B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540AB7492301ADA0007B790B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		540AB74B2301ADE9007B790B /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540AB7152301AD4F007B790B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540AB7292301AD50007B790B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540AB7342301AD50007B790B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540AB70F2301AD4F007B790B = {
+			isa = PBXGroup;
+			children = (
+				540AB71A2301AD4F007B790B /* animals-with-custom-table-view-cells */,
+				540AB72F2301AD50007B790B /* animals-with-custom-table-view-cellsTests */,
+				540AB73A2301AD50007B790B /* animals-with-custom-table-view-cellsUITests */,
+				540AB7192301AD4F007B790B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540AB7192301AD4F007B790B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540AB7182301AD4F007B790B /* animals-with-custom-table-view-cells.app */,
+				540AB72C2301AD50007B790B /* animals-with-custom-table-view-cellsTests.xctest */,
+				540AB7372301AD50007B790B /* animals-with-custom-table-view-cellsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540AB71A2301AD4F007B790B /* animals-with-custom-table-view-cells */ = {
+			isa = PBXGroup;
+			children = (
+				540AB71B2301AD4F007B790B /* AppDelegate.swift */,
+				540AB71D2301AD4F007B790B /* ViewController.swift */,
+				540AB7492301ADA0007B790B /* Animal.swift */,
+				540AB74B2301ADE9007B790B /* AnimalData.swift */,
+				540AB71F2301AD4F007B790B /* Main.storyboard */,
+				540AB7222301AD50007B790B /* Assets.xcassets */,
+				540AB7242301AD50007B790B /* LaunchScreen.storyboard */,
+				540AB7272301AD50007B790B /* Info.plist */,
+			);
+			path = "animals-with-custom-table-view-cells";
+			sourceTree = "<group>";
+		};
+		540AB72F2301AD50007B790B /* animals-with-custom-table-view-cellsTests */ = {
+			isa = PBXGroup;
+			children = (
+				540AB7302301AD50007B790B /* animals_with_custom_table_view_cellsTests.swift */,
+				540AB7322301AD50007B790B /* Info.plist */,
+			);
+			path = "animals-with-custom-table-view-cellsTests";
+			sourceTree = "<group>";
+		};
+		540AB73A2301AD50007B790B /* animals-with-custom-table-view-cellsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				540AB73B2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift */,
+				540AB73D2301AD50007B790B /* Info.plist */,
+			);
+			path = "animals-with-custom-table-view-cellsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540AB7172301AD4F007B790B /* animals-with-custom-table-view-cells */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540AB7402301AD50007B790B /* Build configuration list for PBXNativeTarget "animals-with-custom-table-view-cells" */;
+			buildPhases = (
+				540AB7142301AD4F007B790B /* Sources */,
+				540AB7152301AD4F007B790B /* Frameworks */,
+				540AB7162301AD4F007B790B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "animals-with-custom-table-view-cells";
+			productName = "animals-with-custom-table-view-cells";
+			productReference = 540AB7182301AD4F007B790B /* animals-with-custom-table-view-cells.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540AB72B2301AD50007B790B /* animals-with-custom-table-view-cellsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540AB7432301AD50007B790B /* Build configuration list for PBXNativeTarget "animals-with-custom-table-view-cellsTests" */;
+			buildPhases = (
+				540AB7282301AD50007B790B /* Sources */,
+				540AB7292301AD50007B790B /* Frameworks */,
+				540AB72A2301AD50007B790B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540AB72E2301AD50007B790B /* PBXTargetDependency */,
+			);
+			name = "animals-with-custom-table-view-cellsTests";
+			productName = "animals-with-custom-table-view-cellsTests";
+			productReference = 540AB72C2301AD50007B790B /* animals-with-custom-table-view-cellsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		540AB7362301AD50007B790B /* animals-with-custom-table-view-cellsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540AB7462301AD50007B790B /* Build configuration list for PBXNativeTarget "animals-with-custom-table-view-cellsUITests" */;
+			buildPhases = (
+				540AB7332301AD50007B790B /* Sources */,
+				540AB7342301AD50007B790B /* Frameworks */,
+				540AB7352301AD50007B790B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540AB7392301AD50007B790B /* PBXTargetDependency */,
+			);
+			name = "animals-with-custom-table-view-cellsUITests";
+			productName = "animals-with-custom-table-view-cellsUITests";
+			productReference = 540AB7372301AD50007B790B /* animals-with-custom-table-view-cellsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540AB7102301AD4F007B790B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "David Rifkin";
+				TargetAttributes = {
+					540AB7172301AD4F007B790B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					540AB72B2301AD50007B790B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 540AB7172301AD4F007B790B;
+					};
+					540AB7362301AD50007B790B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 540AB7172301AD4F007B790B;
+					};
+				};
+			};
+			buildConfigurationList = 540AB7132301AD4F007B790B /* Build configuration list for PBXProject "animals-with-custom-table-view-cells" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 540AB70F2301AD4F007B790B;
+			productRefGroup = 540AB7192301AD4F007B790B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540AB7172301AD4F007B790B /* animals-with-custom-table-view-cells */,
+				540AB72B2301AD50007B790B /* animals-with-custom-table-view-cellsTests */,
+				540AB7362301AD50007B790B /* animals-with-custom-table-view-cellsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540AB7162301AD4F007B790B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540AB7262301AD50007B790B /* LaunchScreen.storyboard in Resources */,
+				540AB7232301AD50007B790B /* Assets.xcassets in Resources */,
+				540AB7212301AD4F007B790B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540AB72A2301AD50007B790B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540AB7352301AD50007B790B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540AB7142301AD4F007B790B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540AB71E2301AD4F007B790B /* ViewController.swift in Sources */,
+				540AB71C2301AD4F007B790B /* AppDelegate.swift in Sources */,
+				540AB74A2301ADA0007B790B /* Animal.swift in Sources */,
+				540AB74C2301ADE9007B790B /* AnimalData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540AB7282301AD50007B790B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540AB7312301AD50007B790B /* animals_with_custom_table_view_cellsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540AB7332301AD50007B790B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540AB73C2301AD50007B790B /* animals_with_custom_table_view_cellsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540AB72E2301AD50007B790B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540AB7172301AD4F007B790B /* animals-with-custom-table-view-cells */;
+			targetProxy = 540AB72D2301AD50007B790B /* PBXContainerItemProxy */;
+		};
+		540AB7392301AD50007B790B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540AB7172301AD4F007B790B /* animals-with-custom-table-view-cells */;
+			targetProxy = 540AB7382301AD50007B790B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540AB71F2301AD4F007B790B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540AB7202301AD4F007B790B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		540AB7242301AD50007B790B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540AB7252301AD50007B790B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540AB73E2301AD50007B790B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		540AB73F2301AD50007B790B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		540AB7412301AD50007B790B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "animals-with-custom-table-view-cells/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sixpointone.animals-with-custom-table-view-cells";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		540AB7422301AD50007B790B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "animals-with-custom-table-view-cells/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sixpointone.animals-with-custom-table-view-cells";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		540AB7442301AD50007B790B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "animals-with-custom-table-view-cellsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sixpointone.animals-with-custom-table-view-cellsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animals-with-custom-table-view-cells.app/animals-with-custom-table-view-cells";
+			};
+			name = Debug;
+		};
+		540AB7452301AD50007B790B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "animals-with-custom-table-view-cellsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sixpointone.animals-with-custom-table-view-cellsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animals-with-custom-table-view-cells.app/animals-with-custom-table-view-cells";
+			};
+			name = Release;
+		};
+		540AB7472301AD50007B790B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "animals-with-custom-table-view-cellsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sixpointone.animals-with-custom-table-view-cellsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "animals-with-custom-table-view-cells";
+			};
+			name = Debug;
+		};
+		540AB7482301AD50007B790B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "animals-with-custom-table-view-cellsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sixpointone.animals-with-custom-table-view-cellsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "animals-with-custom-table-view-cells";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540AB7132301AD4F007B790B /* Build configuration list for PBXProject "animals-with-custom-table-view-cells" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540AB73E2301AD50007B790B /* Debug */,
+				540AB73F2301AD50007B790B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540AB7402301AD50007B790B /* Build configuration list for PBXNativeTarget "animals-with-custom-table-view-cells" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540AB7412301AD50007B790B /* Debug */,
+				540AB7422301AD50007B790B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540AB7432301AD50007B790B /* Build configuration list for PBXNativeTarget "animals-with-custom-table-view-cellsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540AB7442301AD50007B790B /* Debug */,
+				540AB7452301AD50007B790B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540AB7462301AD50007B790B /* Build configuration list for PBXNativeTarget "animals-with-custom-table-view-cellsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540AB7472301AD50007B790B /* Debug */,
+				540AB7482301AD50007B790B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540AB7102301AD4F007B790B /* Project object */;
+}
